@@ -145,7 +145,7 @@ export default {
   .bg {
     width: 100%;
     height: 100%;
-    background: url('~assets/loginBg.png') no-repeat center;
+    background: url('~assets/loginbackground.png') no-repeat center;
     background-size: 1000px, auto, cover;
     position: absolute;
     top: 0;

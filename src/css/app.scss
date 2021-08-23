@@ -1,0 +1,75 @@
+// app global css in SCSS form
+
+// bootstrap rfs 設定
+@import "./vendor/rfs";
+
+// 變數
+@import "./quasar.variables.scss";
+
+// mixin
+@import "./mixin/rwd";
+
+// 全域
+@import "./global";
+
+// 區塊結構
+@import "./header";
+
+.q-btn--dense .q-btn__wrapper {
+  padding: 0;
+}
+.scroll {
+  .q-item {
+    font-weight: 700;
+  }
+  .q-item__section {
+    min-width: 40px;
+  }
+  .q-item:hover {
+    color: green;
+  }
+  .q-item__label:hover {
+    color: #c10015;
+  }
+  .q-icon:before {
+    font-size: 1rem;
+  }
+  .q-expansion-item__container {
+    .q-focusable {
+      i:before {
+        font-size: 0.025rem;
+      }
+    }
+    .q-item__section--avatar {
+      i:before {
+        font-size: 1rem;
+      }
+    }
+  }
+  a {
+    text-decoration: none;
+    .q-card {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      font-weight: 700;
+      box-shadow: none;
+      .q-card__section--vert {
+        width: 100%;
+        height: 100%;
+        padding: 16px 16px 16px 40px !important;
+        .q-item__label {
+          display: flex;
+          padding-left: 1rem;
+        }
+      }
+    }
+    .q-card:hover {
+      color: #c10015;
+      background: rgba(216, 216, 216, 0.349);
+    }
+  }
+  a:hover {
+    color: #c10015;
+  }
+}

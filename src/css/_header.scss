@@ -1,0 +1,28 @@
+header {
+  hr {
+    margin: 0;
+  }
+  a {
+    height: 100%;
+    display: block;
+    text-decoration: none;
+    color: black;
+  }
+  .menuBtn {
+    color: black;
+  }
+  .block {
+    color: black;
+    font-weight: 700;
+  }
+  .block:hover {
+    color: #c10015;
+  }
+  .q-btn-dropdown--simple * + .q-btn-dropdown__arrow {
+    font-size: 0.5rem;
+  }
+  .fa-caret-down:before {
+    font-size: 0.7rem;
+    color: black;
+  }
+}

@@ -25,7 +25,7 @@ const routes = [
       // 關於我們_光采農圃的由來
       {
         path: 'farm',
-        component: () => import('pages/front/About_Farm.vue'),
+        component: () => import('pages/front/About_farm.vue'),
         meta: { title: '317 林邊故事鄉 | 光采農圃的由來' }
       },
       // 感動旅行_活動體驗--------------------------->

@@ -1,0 +1,1 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([[10],{e262:function(e,n,t){"use strict";t.r(n);var a=function(){var e=this,n=e.$createElement,t=e._self._c||n;return t("h1",[e._v("光采農圃的由來")])},l=[],r={name:"Farm"},u=r,c=t("2877"),s=Object(c["a"])(u,a,l,!1,null,null,null);n["default"]=s.exports}}]);

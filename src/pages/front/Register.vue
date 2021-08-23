@@ -163,7 +163,7 @@ export default {
 <style scoped>
   .container-fluid {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('../../assets/map.jpg') no-repeat center/cover;
+    url('~assets/map.jpg') no-repeat center/cover;
 
     position: relative;
     transform: 1s;
@@ -173,7 +173,7 @@ export default {
     height: 100%;
 
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('../../assets/map.jpg') no-repeat center/cover;
+    url('~assets/map.jpg') no-repeat center/cover;
     filter: blur(3px);
   }
   .registerBox_big {
@@ -214,7 +214,7 @@ export default {
       width: 50%;
       border-radius: 6px 0 0 6px;
 
-      background: url('../../assets/map.jpg') no-repeat center/cover;
+      background: url('~assets/map.jpg') no-repeat center/cover;
       padding: 1.5rem;
 
       color: #eee;

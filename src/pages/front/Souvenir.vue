@@ -33,7 +33,7 @@
       </div>
 
       <div class="col right">
-        <div v-for="num in leftRight(productItem)" :key="num">
+        <div v-for="num in leftRight(productItem)" :key="num._id">
           <div class="column rightItem q-pt-xl" >
             <div class="col rightImage">
               <!-- <q-img :src="productItem.left[0].right[num - 1].image"/> -->
@@ -89,16 +89,16 @@ export default {
       return item?.left?.[0]?.right
     },
     leftRightImage: function (item) {
-      return item?.left?.[0]?.right?.[item - 1]?.image
+      return item?.image
     },
     leftRightName: function (item) {
-      return item?.left?.[0]?.right?.[item - 1]?.name
+      return item?.name
     },
     leftRightContent: function (item) {
-      return item?.left?.[0]?.right?.[item - 1]?.content
+      return item?.content
     },
     leftRightPrice: function (item) {
-      return item?.left?.[0]?.right?.[item - 1]?.price
+      return item?.price
     }
   },
   async mounted () {

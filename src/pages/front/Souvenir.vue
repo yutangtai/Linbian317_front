@@ -89,16 +89,16 @@ export default {
       return item.left?.[0]?.right.length
     },
     leftRightImage: function (item) {
-      return item.left?.[0]?.right.?.[item - 1]?.image
+      return item.left?.[0]?.right?.[item - 1]?.image
     },
     leftRightName: function (item) {
-      return item.left?.[0]?.right.?.[item - 1]?.name
+      return item.left?.[0]?.right?.[item - 1]?.name
     },
     leftRightContent: function (item) {
-      return item.left?.[0]?.right.?.[item - 1]?.content
+      return item.left?.[0]?.right?.[item - 1]?.content
     },
     leftRightPrice: function (item) {
-      return item.left?.[0]?.right.?.[item - 1]?.price
+      return item.left?.[0]?.right?.[item - 1]?.price
     }
   },
   async mounted () {

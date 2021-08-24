@@ -15,7 +15,7 @@
       <div class="col left" :id="productItem._id">
         <div class="imageBox">
           <div class="mask"></div>
-          <q-img :src="productItem.left[0].image" :ratio="1" />
+          <q-img :src="productItem.left?.[0]?.image" :ratio="1" />
         </div>
         <div class="column box text-white">
           <div class="col-4 flex justify-center items-end">

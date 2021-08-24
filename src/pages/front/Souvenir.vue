@@ -15,7 +15,7 @@
       <div class="col left" :id="productItem._id">
         <div class="imageBox">
           <div class="mask"></div>
-          <q-img :src="leftImage" :ratio="1" />
+          <q-img :src="leftImage(productItem)" :ratio="1" />
         </div>
         <div class="column box text-white">
           <div class="col-4 flex justify-center items-end">
@@ -64,11 +64,12 @@ export default {
     }
   },
   computed: {
-    leftImage: function () {
-      return this.item.left?.[0]?.image
-    }
+    
   },
   methods: {
+    leftImage: function (item) {
+      return item.left?.[0]?.image
+    }
   },
   async mounted () {
     try {

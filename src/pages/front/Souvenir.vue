@@ -33,7 +33,7 @@
       </div>
 
       <div class="col right">
-        <div v-for="num in leftRightLengtht()" :key="num">
+        <div v-for="num in leftRightLength()" :key="num">
           <div class="column rightItem q-pt-xl" >
             <div class="col rightImage">
               <!-- <q-img :src="productItem.left[0].right[num - 1].image"/> -->

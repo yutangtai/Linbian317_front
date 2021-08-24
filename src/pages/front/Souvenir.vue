@@ -19,12 +19,15 @@
         </div>
         <div class="column box text-white">
           <div class="col-4 flex justify-center items-end">
-            <div class="text-h4"><strong>{{ productItem.left[0].title }}</strong></div>
+            <div class="text-h4"><strong v-model="leftTitle(productItem)"></strong></div>
           </div>
           <div class="col-8 q-px-lg q-pt-sm" style="letter-spacing: 1.5px; text-indent: 2rem; white-space: pre-line">
-            <div v-if="productItem.left[0].intro_para1 !== 'null'" class="text-subtitle2">{{ productItem.left[0].intro_para1 }}</div>
+            <!-- <div v-if="productItem.left[0].intro_para1 !== 'null'" class="text-subtitle2">{{ productItem.left[0].intro_para1 }}</div>
             <div v-if="productItem.left[0].intro_para2 !== 'null'" class="text-subtitle2">{{ productItem.left[0].intro_para2 }}</div>
-            <div v-if="productItem.left[0].intro_para3 !== 'null'" class="text-subtitle2">{{ productItem.left[0].intro_para3 }}</div>
+            <div v-if="productItem.left[0].intro_para3 !== 'null'" class="text-subtitle2">{{ productItem.left[0].intro_para3 }}</div> -->
+            <div v-if="leftPara1(productItem) !== 'null'" class="text-subtitle2" v-model="leftPara1(productItem)"></div>
+            <div v-if="leftPara2(productItem) !== 'null'" class="text-subtitle2" v-model="leftPara2(productItem)"></div>
+            <div v-if="leftPara3(productItem) !== 'null'" class="text-subtitle2" v-model="leftPara3(productItem)"></div>
           </div>
         </div>
       </div>
@@ -68,6 +71,18 @@ export default {
   methods: {
     leftImage: function (item) {
       return item.left?.[0]?.image
+    },
+    leftTitle: function (item) {
+      return item.left?.[0]?.title
+    },
+    leftPara1: function (item) {
+      return item.left?.[0]?.intro_para1
+    },
+    leftPara2: function (item) {
+      return item.left?.[0]?.intro_para2
+    },
+    leftPara3: function (item) {
+      return item.left?.[0]?.intro_para3
     }
   },
   async mounted () {

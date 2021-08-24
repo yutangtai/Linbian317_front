@@ -33,15 +33,16 @@
       </div>
 
       <div class="col right">
-        <div v-for="num in productItem.left[0].right.length" :key="num">
+        <div v-for="num in leftRightLengtht()" :key="num">
           <div class="column rightItem q-pt-xl" >
             <div class="col rightImage">
-              <q-img :src="productItem.left[0].right[num - 1].image"/>
+              <!-- <q-img :src="productItem.left[0].right[num - 1].image"/> -->
+              <q-img :src="leftRightImage(num)"/>
             </div>
             <div class="col column textBox">
-              <div class="col name">{{ productItem.left[0].right[num - 1].name }}</div>
-              <div class="col">{{ productItem.left[0].right[num - 1].content }}</div>
-              <div class="col">{{ productItem.left[0].right[num - 1].price }} 元</div>
+              <div class="col name">{{ leftRightName(num) }}</div>
+              <div class="col">{{ leftRightContent(num) }}</div>
+              <div class="col">{{ leftRightPrice(num) }} 元</div>
               <div class="col flex justify-end">
                 <hr>
               </div>
@@ -83,6 +84,21 @@ export default {
     },
     leftPara3: function (item) {
       return item.left?.[0]?.intro_para3
+    },
+    leftRightLength: function (item) {
+      return item.left?.[0]?.right.length
+    },
+    leftRightImage: function (item) {
+      return item.left?.[0]?.right.?.[item - 1]?.image
+    },
+    leftRightName: function (item) {
+      return item.left?.[0]?.right.?.[item - 1]?.name
+    },
+    leftRightContent: function (item) {
+      return item.left?.[0]?.right.?.[item - 1]?.content
+    },
+    leftRightPrice: function (item) {
+      return item.left?.[0]?.right.?.[item - 1]?.price
     }
   },
   async mounted () {

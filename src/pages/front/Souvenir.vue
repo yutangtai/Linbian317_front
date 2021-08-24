@@ -64,7 +64,6 @@ export default {
     }
   },
   computed: {
-    
   },
   methods: {
     leftImage: function (item) {

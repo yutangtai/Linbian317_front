@@ -33,7 +33,7 @@
       </div>
 
       <div class="col right">
-        <div v-for="num in leftRightLength()" :key="num">
+        <div v-for="num in leftRight(productItem)" :key="num">
           <div class="column rightItem q-pt-xl" >
             <div class="col rightImage">
               <!-- <q-img :src="productItem.left[0].right[num - 1].image"/> -->
@@ -85,8 +85,8 @@ export default {
     leftPara3: function (item) {
       return item?.left?.[0]?.intro_para3
     },
-    leftRightLength: function (item) {
-      return item?.left?.[0]?.right.length
+    leftRight: function (item) {
+      return item?.left?.[0]?.right
     },
     leftRightImage: function (item) {
       return item?.left?.[0]?.right?.[item - 1]?.image

@@ -71,34 +71,34 @@ export default {
   },
   methods: {
     leftImage: function (item) {
-      return item.left?.[0]?.image
+      return item?.left?.[0]?.image
     },
     leftTitle: function (item) {
-      return item.left?.[0]?.title
+      return item?.left?.[0]?.title
     },
     leftPara1: function (item) {
-      return item.left?.[0]?.intro_para1
+      return item?.left?.[0]?.intro_para1
     },
     leftPara2: function (item) {
-      return item.left?.[0]?.intro_para2
+      return item?.left?.[0]?.intro_para2
     },
     leftPara3: function (item) {
-      return item.left?.[0]?.intro_para3
+      return item?.left?.[0]?.intro_para3
     },
     leftRightLength: function (item) {
-      return item.left?.[0]?.right.length
+      return item?.left?.[0]?.right.length
     },
     leftRightImage: function (item) {
-      return item.left?.[0]?.right?.[item - 1]?.image
+      return item?.left?.[0]?.right?.[item - 1]?.image
     },
     leftRightName: function (item) {
-      return item.left?.[0]?.right?.[item - 1]?.name
+      return item?.left?.[0]?.right?.[item - 1]?.name
     },
     leftRightContent: function (item) {
-      return item.left?.[0]?.right?.[item - 1]?.content
+      return item?.left?.[0]?.right?.[item - 1]?.content
     },
     leftRightPrice: function (item) {
-      return item.left?.[0]?.right?.[item - 1]?.price
+      return item?.left?.[0]?.right?.[item - 1]?.price
     }
   },
   async mounted () {

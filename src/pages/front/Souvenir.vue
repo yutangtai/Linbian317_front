@@ -81,7 +81,7 @@ export default {
     leftPara2: function (item) {
       return item.left?.[0]?.intro_para2
     },
-    leftPara3: function (item) {      
+    leftPara3: function (item) {
       return item.left?.[0]?.intro_para3
     }
   },

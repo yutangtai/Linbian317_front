@@ -22,9 +22,6 @@
             <div class="text-h4"><strong>{{ leftTitle(productItem) }}</strong></div>
           </div>
           <div class="col-8 q-px-lg q-pt-sm" style="letter-spacing: 1.5px; text-indent: 2rem; white-space: pre-line">
-            <!-- <div v-if="productItem.left[0].intro_para1 !== 'null'" class="text-subtitle2">{{ productItem.left[0].intro_para1 }}</div>
-            <div v-if="productItem.left[0].intro_para2 !== 'null'" class="text-subtitle2">{{ productItem.left[0].intro_para2 }}</div>
-            <div v-if="productItem.left[0].intro_para3 !== 'null'" class="text-subtitle2">{{ productItem.left[0].intro_para3 }}</div> -->
             <div v-if="leftPara1(productItem) !== 'null'" class="text-subtitle2">{{ leftPara1(productItem) }}</div>
             <div v-if="leftPara2(productItem) !== 'null'" class="text-subtitle2">{{ leftPara2(productItem) }}</div>
             <div v-if="leftPara3(productItem) !== 'null'" class="text-subtitle2">{{ leftPara3(productItem) }}</div>
@@ -36,7 +33,6 @@
         <div v-for="num in leftRight(productItem)" :key="num._id">
           <div class="column rightItem q-pt-xl" >
             <div class="col rightImage">
-              <!-- <q-img :src="productItem.left[0].right[num - 1].image"/> -->
               <q-img :src="leftRightImage(num)"/>
             </div>
             <div class="col column textBox">
@@ -50,6 +46,9 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="column text-white justify-center items-center" style="width: 100%; height: 50px; background: #b60005;">
+      <div class="col flex justify-center items-center">Copyright © 2013 by 社團法人屏東縣林仔邊自然文史保育協會</div>
     </div>
   </div>
 </template>

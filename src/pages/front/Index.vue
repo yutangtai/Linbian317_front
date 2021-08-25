@@ -147,6 +147,9 @@
       </div>
       <div class="col row justify-center items-start q-pt-md">開放團體預約，歡迎洽詢客製規劃！</div>
     </div>
+    <div class="column text-white justify-center items-center" style="width: 100%; height: 50px; background: #b60005;">
+      <div class="col flex justify-center items-center">Copyright © 2013 by 社團法人屏東縣林仔邊自然文史保育協會</div>
+    </div>
   </div>
 </template>
 
